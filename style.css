@@ -1,0 +1,87 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #0a1540, #000);
+  font-family: Arial;
+  color: white;
+}
+input {
+  text-align: center;
+  width: 260px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #d4b6ff;
+  color: #1a0033;
+  outline: none;
+}
+.ball {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #ae8cff, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 60px #9b5de5;
+}
+.answer {
+  font-size: 24px;
+  color: #ffeaff;
+  text-shadow: 0 0 10px #fff;
+}
+button {
+  background: #9b5de5;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #7b3fe0;
+}
+@media (max-width: 500px) {
+  body {
+    justify-content: center;
+  }
+  .ball {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  .answer {
+    font-size: 20px;
+  }
+  input {
+    width: 180px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .ball {
+    width: 150px;
+    height: 150px;
+  }
+  .answer {
+    font-size: 16px;
+  }
+  input {
+    width: 140px;
+    font-size: 14px;
+  }
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
